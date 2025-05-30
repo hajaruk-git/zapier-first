@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from responder import my_gpt
+import os
 
 app = Flask(__name__)
 @app.route("/webhook", methods=["POST"])
